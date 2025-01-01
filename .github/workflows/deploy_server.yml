@@ -21,8 +21,8 @@ jobs:
           key: ${{ secrets.SSH_KEY }}
           port: ${{ secrets.PORT }}
           script: |
-            export NVM_DIR="$HOME/.config/nvm"
-            source $NVM_DIR/nvm.sh
+            export NVM_DIR=~/.nvm
+            source ~/.nvm/nvm.sh
 
             cd /var/web05-Denamu
             git pull origin main
